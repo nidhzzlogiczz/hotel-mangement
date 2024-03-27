@@ -1,0 +1,169 @@
+/* resetting the css */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* NAVIGATION BAR STYLING */
+/* styling image and logo */
+#logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid wheat;
+
+}
+
+#logo {
+    margin: 14px 16px;
+}
+
+#mainnav {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Timmana', sans-serif;
+}
+
+/* styling list */
+div ul {
+    display: flex;
+    margin: 3px 100px;
+    padding: -10px;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+div h1 {
+    padding: 20px 60px;
+    margin: 10px 15px;
+    color: wheat;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 3px 20px;
+    margin: 10px 20px;
+    color: white;
+    border-radius: 16px;
+}
+
+#mainnav::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: beige;
+}
+
+/* HOME SECTION STYLING */
+#Home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    /* height: 400px; */
+    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Timmana', sans-serif;
+}
+
+#Home::before {
+    content: "";
+    background: url(mainbg.jpg) no-repeat center center/cover;
+    position: fixed;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.86;
+}
+
+/* home utility */
+.primary {
+    background: linear-gradient(yellow, rgb(214, 169, 214), rgb(0, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: larger;
+    font-size: 1.7rem;
+    z-index: 3;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+}
+
+#Home p {
+    /* background: linear-gradient(rgb(92, 52, 185), rgb(255, 255, 255), rgb(81, 255, 0));
+    ebkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    color: rgb(255, 255, 255)
+}
+
+#btn {
+    padding: 3px 20px;
+    margin: 10px 20px;
+    border-radius: 16px;
+    cursor: all-scroll;
+}
+
+#btn:hover {
+    background-color: rgb(119, 61, 61);
+    color: bisque;
+    border: 3px solid rgb(164, 58, 196);
+}
+
+/* service section */
+#service {
+    margin-top: 200px;
+}
+
+#service h1 {
+    text-align: center;
+}
+
+.servicecont {
+    border: 2px solid;
+    padding: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    height: 200px;
+    width: 250px;
+    border: 3px solid;
+    margin: 10px;
+    padding: 20px;
+}
+
+#box1 {
+    display: block;
+
+}
+
+#box1 img {
+    height: 200px;
+    width: 250px;
+}
